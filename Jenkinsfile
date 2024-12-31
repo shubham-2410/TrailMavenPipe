@@ -32,6 +32,7 @@ pipeline {
                     -Dsonar.projectKey=hello-world ^
                     -Dsonar.projectName=Hello World ^
                     -Dsonar.login=${SONARQUBE_TOKEN} ^
+                    -Dsonar.sources=src/main/java/com/example ^
                     -Dsonar.host.url=http://localhost:9000 
                     '
                 }
